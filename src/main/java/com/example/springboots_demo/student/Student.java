@@ -1,2 +1,4 @@
-package com.example.springboots_demo.student;public class Student {
+package com.example.springboots_demo.student;
+
+public class Student {
 }
