@@ -1,2 +1,6 @@
-package com.example.springboots_demo.student;public interface StudentRepository {
+package com.example.springboots_demo.student;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StudentRepository extends JpaRepository<Student, Long> {
 }
