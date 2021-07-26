@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Primary
-public class BubbleSortAlgorithm implements  SortAlgorithm {
-    public  int[] sort(int[] number) {
-
-        return  number;
+public class BubbleSortAlgorithm implements SortAlgorithm {
+    public int[] sort(int[] number) {
+        // logic buble sort
+        return number;
     }
 }
