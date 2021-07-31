@@ -1,4 +1,4 @@
-package com.example.rest.webservice.restapiservice;
+package com.example.rest.webservice.restapiservice.docs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
