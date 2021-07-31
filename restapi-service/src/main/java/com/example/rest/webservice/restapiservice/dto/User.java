@@ -1,4 +1,4 @@
-package com.example.rest.webservice.restapiservice.dto;
+package com.example.rest.webservice.restapiservice.user.dto;
 
 import lombok.Getter;
 import lombok.Setter;
