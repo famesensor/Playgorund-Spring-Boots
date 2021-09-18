@@ -1,4 +1,3 @@
 package com.example.spring.springBootKotlinApp.model.blogcategory
 
-class BlogCategoryRequest {
-}
+data class BlogCategoryRequest(var name: String);
