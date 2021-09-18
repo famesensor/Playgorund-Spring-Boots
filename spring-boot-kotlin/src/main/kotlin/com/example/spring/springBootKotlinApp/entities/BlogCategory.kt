@@ -1,20 +1,18 @@
 package com.example.spring.springBootKotlinApp.entities
 
 import java.util.*
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.Table
+import javax.persistence.*
 
 @Entity
 @Table(name = "blog_category")
-class BlogCategory {
-
+data class BlogCategory(
     @Id
-    @GeneratedValue
-    val id: Long? = null;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long = 0,
 
-    var name: String? = null;
+    val name: String = "",
 
-    lateinit var createDate: Date;
-}
+    val createDate: Date,
+
+    val updateDate: Date
+)

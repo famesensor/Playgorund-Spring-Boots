@@ -17,6 +17,7 @@ class Blog(
     var blogCategory: BlogCategory? = null,
 
     var createDate: Date,
-) {
 
+    var updateDate: Date,
+) {
 }
