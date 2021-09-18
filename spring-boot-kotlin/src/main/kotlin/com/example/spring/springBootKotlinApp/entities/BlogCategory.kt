@@ -1,5 +1,9 @@
 package com.example.spring.springBootKotlinApp.entities
 
+import org.hibernate.annotations.UpdateTimestamp
+import org.springframework.data.annotation.CreatedDate
+import java.time.LocalDate
+import java.time.LocalDateTime
 import java.util.*
 import javax.persistence.*
 
@@ -8,11 +12,16 @@ import javax.persistence.*
 data class BlogCategory(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id", unique = true, nullable = false)
     val id: Long = 0,
 
-    val name: String = "",
+    var name: String = "",
 
-    val createDate: Date,
+    @CreatedDate
+    @Column(nullable = false)
+    var createDate: LocalDateTime = LocalDateTime.now(),
 
-    val updateDate: Date
+    @UpdateTimestamp
+    @Column(nullable = false)
+    var updateDate: LocalDateTime = LocalDateTime.now()
 )
