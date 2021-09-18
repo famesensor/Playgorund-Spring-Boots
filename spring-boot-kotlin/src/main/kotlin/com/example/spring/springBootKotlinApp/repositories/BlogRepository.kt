@@ -1,4 +1,7 @@
 package com.example.spring.springBootKotlinApp.repositories
 
-interface BlogRepository {
+import com.example.spring.springBootKotlinApp.entities.Blog
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface BlogRepository: JpaRepository<Blog, Long> {
 }
