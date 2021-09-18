@@ -33,7 +33,7 @@ class BlogController @Autowired constructor(val blogService: BlogService) {
     }
 
     @DeleteMapping("/{id}")
-    fun deleteBlog(@PathVariable id: Long): Blog {
+    fun deleteBlog(@PathVariable id: Long) {
         return blogService.deleteBlog(id);
     }
 }
